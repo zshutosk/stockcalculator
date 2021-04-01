@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Stock/Crypto Exchange Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <img src="img/stock.png" alt="stockgraphic" class="money-img" />
+    <h1>Investment Calculator</h1>
+    <h3> Type in the amount of shares/coins you want and find out the latest price of each large-cap company/crypto! </h3>
+
+    <div class="container">
+      <div class="share-coins">
+        <h3>SHARE/COIN</h3>
+        <input type="number" id="shareamount" placeholder="0" value="1" />
+      </div>
+      <div class="checkboxes">
+      <input class="one-box" type="checkbox" name="boxes" value="currency">Stocks
+      <input class="two-box" type="checkbox" name="boxes" value="crypto">Crypto
+    </div>
+    </div>
+      <div class="currency">
+        <select name="ticker" id="ticker">
+          <option value="MSFT">MSFT</option>
+          <option value="INTC">INTC</option>
+          <option value="AAPL">AAPL</option>
+          <option value="AMZN">AMZN</option>
+          <option value="GOOG">GOOG</option>
+          <option value="GOOGL">GOOGL</option>
+          <option value="FB">FB</option>
+          <option value="TSM">TSM</option>
+          <option value="BABA">BABA</option>
+          <option value="TSLA">TSLA</option>
+          <option value="JPM">JPM</option>
+          <option value="WMT">WMT</option>
+          <option value="DIS">DIS</option>
+          <option value="PG">PG</option>
+          <option value="MA">MA</option>
+          <option value="PYPL">PYPL</option>
+        </select>
+        <input type="text" id="priceamount" placeholder="0" />
+      </div>
+        <div class="crypto">
+          <select name="ticker2" id="ticker2">
+            <option value="BTC">BTC</option>
+            <option value="ETH">ETH</option>
+            <option value="LTC">LTC</option>
+            <option value="BCH">BCH</option>
+            <option value="EOS">EOS</option>
+            <option value="DASH">DASH</option>
+            <option value="OXT">OXT</option>
+            <option value="MKR">MKR</option>
+            <option value="XLM">XLM</option>
+            <option value="ATOM">ATOM</option>
+            </select>
+            <input type="text" id="coinamount" placeholder="0" />
+          </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
