@@ -30,8 +30,8 @@ function calculate() {
   const ticker = tickerEl.value;
   const ticker2 = ticker2El.value;
   const shareamount = shareEl.value;
-  const firstAPICall = fetch(`http://api.marketstack.com/v1/intraday/latest?access_key=ba78398902bcc118daea73d8d09cf4ea&symbols=${ticker}`)
-  const secondAPICall = fetch(`http://min-api.cryptocompare.com/data/price?fsym=${ticker2}&tsyms=USD&api_key={4c6ca0b11de29c60dfa3df49a2d344b9421dded9635f0c25e7550fa9c6187eb3}`);
+  const firstAPICall = fetch(`https://api.marketstack.com/v1/intraday/latest?access_key=ba78398902bcc118daea73d8d09cf4ea&symbols=${ticker}`)
+  const secondAPICall = fetch(`https://min-api.cryptocompare.com/data/price?fsym=${ticker2}&tsyms=USD&api_key={4c6ca0b11de29c60dfa3df49a2d344b9421dded9635f0c25e7550fa9c6187eb3}`);
 
   Promise.all([firstAPICall, secondAPICall])
   .then(values => Promise.all(values.map(value => value.json())))
