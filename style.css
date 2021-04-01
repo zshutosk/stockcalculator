@@ -84,7 +84,7 @@ p {
   -moz-appearance: none;
   -webkit-appearance: none;
   color:#f4f4f4;
-  background-color:#f4f4f4;
+  background-color:#006a8a;
   appearance: none;
   border: 1.8px solid #dedede;
   font-size: 16px;
@@ -103,6 +103,14 @@ p {
   text-align: right;
 }
 
+#ticker {
+  background-color:#006a8a;
+}
+
+#ticker2 {
+  background-color:#006a8a;
+}
+
 
 .crypto {
   padding: 12px 0;
@@ -118,7 +126,7 @@ p {
   -moz-appearance: none;
   -webkit-appearance: none;
   color:#f4f4f4;
-  background-color:#f4f4f4;
+  background-color:#006a8a;
   appearance: none;
   border: 1.8px solid #dedede;
   font-size: 16px;
@@ -214,6 +222,5 @@ button:focus {
   margin-left:10px;
   margin-top:-2px;
 }
-
 
 
